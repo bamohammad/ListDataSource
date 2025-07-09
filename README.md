@@ -1,6 +1,6 @@
-# 📦 DataSource
+# 📦 ListDataSource
 
-**DataSource** is a lightweight and modular Swift package designed to simplify `UITableView` and `UICollectionView` data handling. It provides built-in support for pagination, refreshing, empty and error states, while embracing Swift Concurrency and Combine.
+**ListDataSource** is a lightweight and modular Swift package designed to simplify `UITableView` and `UICollectionView` data handling. It provides built-in support for pagination, refreshing, empty and error states, while embracing Swift Concurrency and Combine.
 
 ---
 
@@ -32,7 +32,7 @@ TableViewDataSource / CollectionViewDataSource
 Add to your `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/bamohammad/dataSource.git", from: "1.0.0"),
+.package(url: "https://github.com/bamohammad/ListDataSource.git", from: "1.0.0"),
 ```
 ---
 
