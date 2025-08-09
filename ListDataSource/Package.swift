@@ -1,21 +1,23 @@
-// swift-tools-version: 6.1
 import PackageDescription
 
 let package = Package(
     name: "ListDataSource",
-    defaultLocalization: "en",
-    platforms: [.iOS(.v13)],
+    platforms: [
+        .iOS(.v14), .macOS(.v12)
+    ],
     products: [
-        .library(
-            name: "ListDataSource",
-            targets: ["ListDataSource"]),
+        .library(name: "ListDataSource", targets: ["ListDataSource"])
     ],
     targets: [
         .target(
-            name: "ListDataSource"),
+            name: "ListDataSource",
+            // point to the subfolder where Sources actually live
+            path: "ListDataSource/Sources/ListDataSource"
+        ),
         .testTarget(
             name: "ListDataSourceTests",
-            dependencies: ["ListDataSource"]
-        ),
+            dependencies: ["ListDataSource"],
+            path: "ListDataSource/Tests/ListDataSourceTests"
+        )
     ]
 )
